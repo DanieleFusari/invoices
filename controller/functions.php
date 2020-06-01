@@ -7,15 +7,12 @@ $dotenv->load();
 // ************** Search DATA BASE REPORTING *************************
 // ************** Search DATA BASE REPORTING *************************
 // ************** Search DATA BASE REPORTING *************************
-<<<<<<< HEAD
 
 $host = getenv("host");
 $dbname = getenv("dbname");
 $username = getenv("username");
 $password = getenv("password");
 
-=======
->>>>>>> parent of bd314de... database update
 try {
   $db = new PDO('sqlite:'. __DIR__ . '/mr_chef.db');
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
