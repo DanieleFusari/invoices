@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #990000;
+  --color-gray: #606060;
+  --font-normal: 'Trirong', serif;
+  --font-fancy: 'Italianno', cursive;
+}
+
+.flash{
+  background: var(--color-primary);
+  border-radius: 10px;
+  font-family: var(--font-normal);
+  color: #fff;
+  width: 40%;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+body {
+  max-width: 90%;
+  margin: auto auto;
+  background: var(--color-primary);
+  background: silver;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+header {
+                /* border: 5px solid red; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+nav {
+  width: 90%;
+}
+
+main {
+  background: #fff;
+  margin: 50px auto;
+  padding: 1%;
+  width: 90%;
+}
+
+.nav_options {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: auto;
+  width: 95%;
+  font-family: var(--font-fancy);
+  font-size: 58px;
+}
+
+.nav_options a:hover {
+  color: var(--color-gray);
+}
+
+.switch {
+  display: block;
+  text-align: center;
+
+}
+
+#reporting_details {
+                    border: solid blue 1px;
+  margin: 10px auto;
+  padding: 10px;
+  /* width: 90%; */
+  height: 10%;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-normal);
+}
+
+.search_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+                    /* border: solid green 1px; */
+}
+
+
+#reporting_report {
+  border: var(--color-primary) 3px solid;
+  margin-top: 70px;
+}
+
+.message_paid {
+  color: var(--color-primary);
+  font-family: var(--font-normal);
+  font-size: 30px;
+}
+
+#reporting_report .paid {
+    border-top: var(--color-gray) 5px solid;
+}
+
+#reporting_report h1 {
+    color: var(--color-primary);
+    font-family: var(--font-fancy);
+    font-size: 50px;
+    text-align: center;
+}
+
+#reporting_report table {
+  line-height: 25px;
+}
+
+#reporting_report table thead {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+#reporting_report .table_row:nth-child(even) {
+  background-color: #FFF8DC;
+}
+
+#reporting_report .table_row:nth-child(odd) {
+  background-color: #F8F8FF;
+}
+
+#reporting_report .table_row:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 18px;
+}
+
+#reporting_report th,td {
+  border-bottom: 1px solid black;
+}
+
+#reporting_report .paid table,
+#reporting_report .outstanding table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+      /* border-top: var(--color-gray) 5px solid; */
+}
+
+
+/* ********************************************** */
+/* *************** LOGIN PAGE *************** */
+/* ********************************************** */
+
+#login {
+  margin: auto;
+  width: 80%;
+  height: 500px;
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_form {
+  background: #fff;
+  width: 80%;
+}
+
+.login_form label,
+.login_form input {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+    border: solid 2px var(--color-primary);
+    font-size: 40px;
+}
+
+.login_form label {
+  border: none;
+}
+
+.login_form input[value='Login'] {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--color-primary) 90%, var(--color-gray) 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--font-fancy), sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 35px;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+.login_form input[value='Login']:hover {
+    color: var(--color-gray);
+  }
+
+
+/* ********************************************** */
+/* *************** Account details ************** */
+/* ********************************************** */
+
+#account_details {
+  font-family: var(--font-normal);
+  font-size: 21px;
+}
+
+#account_details h1 {
+  text-align: center;
+  color: var(--color-gray);
+}
+
+#account_details table{
+  width: 80%;
+  margin: auto;
+  text-align:left;
+  /* table-layout: auto; */
+}
+
+#account_details table,
+#account_details th,
+#account_details td {
+  border: 1px solid black;
+}
+
+
+/* ********************************************** */
+/* *************** New Invoice *************** */
+/* ********************************************** */
+
+/************** get ***************/
+.get_invoice fieldset{
+  margin: 20px auto;
+  padding: 30px;
+  color: var(--color-primary);;
+}
+
+.get_invoice [type='submit'] {
+  margin-left: 20px;
+}
+
+/************** form ALL **************/
+
+input,
+#drop_down_account   {
+  text-align: center;
+  margin: auto;
+  color: red;
+}
+
+/************** form account details **************/
+
+#account_invoice_details fieldset {
+  margin: 20px auto;
+  padding: 0;
+  height: auto;
+}
+
+#account_invoice_details table{
+  text-align: center;
+}
+
+#account_invoice_details table th,
+#account_invoice_details table td {
+  border: none;
+}
+
+#account_invoice_details tbody input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/************** form invoice details **************/
+
+#invoice_order table{
+  margin: 10px auto;
+}
+
+#add_events{
+  border: red 10px solid;
+  width: 90%;
+}
+
+#add_events td input {
+  width: 100%;
+}
+
+#add_event{
+  margin: 0 5px;
+}
+
+/************** totals **************/
+.totals_at_bottom {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.totals_bottom {
+    margin: 10px;
+}
+
+.totals_right {
+  margin-right: 80px;
+  color: var(--color-primary);
+}
+
+.totals_right:last-of-type{
+  margin: 10px;
+}
+
+
+/* ********************************************** */
+/* *************** Mobile VERSION *************** */
+/* ********************************************** */
+
+
+@media (max-width:1025px) {
+  main {
+    background: green;
+  }
+
+  .search_form,
+  .search_form label,
+  .search_form input {
+    display: block;
+  }
+}

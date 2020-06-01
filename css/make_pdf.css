@@ -1,0 +1,90 @@
+.inv_head {
+  border-bottom: 1px solid #990000;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ .logo {
+  width: 20%;
+}
+
+.h12_header {
+  margin: 0;
+}
+/* ****** INV ACC ****** */
+
+.inv_acc {
+  font-size: 12px;
+  margin: 10px 0px;
+}
+
+.date_acc_inv {
+  float: left;
+  width: 30%;
+}
+
+.inv_address {
+  width: 25%;
+  text-align: right;
+  float: right;
+}
+
+.company {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0px 0px 10px 0px;
+}
+
+/* ****** INV ACC ****** */
+
+.table {
+  font-size: 12px;
+  table-layout: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+}
+
+.table td {
+  width: auto;
+  /* text-align: left; */
+
+}
+
+.left {
+  text-align: left;
+}
+
+.table_total{
+  margin-top: 40px;
+  border-top: 1px solid #000;
+  margin-left: 100%;
+  width: 200px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.remaining {
+  color: #990000;
+  border-bottom: 1px dashed #990000;
+}
+
+.due {
+  text-align: right;
+}
+
+.bank_details{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: .5rem;
+  border: 1px solid #000;
+}
+.bank_details th,
+.bank_details td {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
