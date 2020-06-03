@@ -19,7 +19,6 @@ for (var i = 0; i < number; i++) {
   cost_phId.addEventListener('keydown', addup);
   headId.addEventListener('click', addup);
   cost_phId.addEventListener('click', addup);
-
 }
 
 // paid and VAT box at the top
@@ -108,7 +107,6 @@ function addup() {
       let vat = net/100 * top_VAT.value;
       let gross = vat + net;
 
-
       cost.value = net.toFixed(2);
       total.value = gross.toFixed(2);
 
@@ -128,6 +126,47 @@ function addup() {
 
       }
 }
+
+
+let create_account = document.querySelector('.create_account');
+let account = document.querySelector('#account');
+let compnay = document.querySelector('#compnay');
+let first_name = document.querySelector('#first_name');
+let last_name = document.querySelector('#last_name');
+let supplier_no = document.querySelector('#supplier_no');
+let email = document.querySelector('#supplier_no');
+
+account.addEventListener('keyup', chckempty);
+compnay.addEventListener('keyup', chckempty);
+first_name.addEventListener('keyup', chckempty);
+last_name.addEventListener('keyup', chckempty);
+supplier_no.addEventListener('keyup', chckempty);
+email.addEventListener('keyup', chckempty);
+
+
+create_account.disabled = true;
+create_account.style.color = 'gray';
+
+
+function chckempty(){
+  if (account.value.length > 2 && compnay.value.length > 2 && first_name.value.length > 2 && last_name.value.length > 2 && supplier_no.value.length > 2 && email.value.length > 2 ) {
+    create_account.disabled = false;
+    create_account.style.color = 'red';
+    console.log(account.value.length);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
 // QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ

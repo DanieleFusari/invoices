@@ -93,6 +93,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php } ?>
 
     </main>
-        <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

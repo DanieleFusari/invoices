@@ -13,7 +13,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
     <main>
-
       <section id="create_edit_invoice" >
         <form class="get_invoice" action="new_invoice.php" method="post">
           <fieldset>
@@ -170,7 +169,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
               </tr>
             </tbody>
           </table>
-          <input type="submit" value="Create Account">
+          <input class="create_account" type="submit" value="Create Account">
         </form>
       </fieldset>
       </section>
@@ -181,7 +180,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
       let number = 1;
     </script>
     <?php } ?>
-      <script type="text/javascript" src="js/script.js"></script>
       <script type="text/javascript" src="js/new_invoice.js"></script>
   </body>
 </html>

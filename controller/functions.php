@@ -14,10 +14,10 @@ $username = getenv("username");
 $password = getenv("password");
 
 try {
-  $db = new PDO('sqlite:'. __DIR__ . '/mr_chef.db');
+  $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (\Exception $e) {
-    echo $e->getMessage();
+  echo $e->getMessage();
 }
 
 function reports($acc, $inv, $pm, $invioce_or_due_date, $from, $to){
@@ -170,11 +170,11 @@ function login($id, $password) {
       );
       setcookie('logged_in', $jwt, time() + 3600, '/');
       setcookie('message', "Logged IN", time() + 1, '/');
-      header('Location: /../invoices.php');
+      header('Location: /../invoices');
       exit;
     } else {
       setcookie('failed', 'Please check your Password or account number', time() + 1, '/');
-      header("Location: /../login.php");
+      header("Location: /../login");
       exit;
     }
 }
