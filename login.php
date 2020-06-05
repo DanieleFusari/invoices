@@ -32,35 +32,19 @@ getmessage();
           <th>Account Number</th>
           <td><?= $account_info->sub ?></td>
         </tr>
-        <!-- <tr>
-          <th>Company Name</th>
-          <td><?= $customer_info['company'] ?></td>
-        </tr>
-        <tr>
-          <th>Account Holder</th>
-          <td><?= $customer_info['last_name'] ?></td>
-        </tr>
-        <tr>
-          <th>Addess</th>
-          <td><?= $customer_info['first_line_address'] ?></td>
-        </tr>
-        <tr>
-          <th>Area</th>
-          <td><?= $customer_info['second_line_address'] ?></td>
-        </tr>
-        <tr>
-          <th>PostCode</th>
-          <td><?= $customer_info['post_code'] ?></td>
-        </tr>
-        <tr>
-          <th>E-mail</th>
-          <td><?= $customer_info['email'] ?></td>
-        </tr>
-        <tr>
-          <th>Contact Number</th>
-          <td><?= $customer_info['phone'] ?></td>
-        </tr> -->
       </table>
+
+      <form class="" action="controller/change_password.php" method="post">
+        <table>
+          <tr>
+            <th><label for="new_password">Enter New Password</label> </th>
+            <td><input id="new_password" type="text" name="new_password"></td>
+          </tr>
+        </table>
+        <input  hidden type="text" name="id" value="<?=$account_info->sub ?>">
+
+        <input type="submit" value="Change Password">
+      </form>
     </div>  <!-- END account_details-->
 </main>
   <?php } ?>

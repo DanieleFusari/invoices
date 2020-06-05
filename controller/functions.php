@@ -208,6 +208,12 @@ function auth(){
   }
 }
 
+function change_password($id, $new_password) {
+  global $db;
+  $db->query("UPDATE login SET password = '$new_password' WHERE account = '$id'");
+}
+
+
 // **************************************************************
 // ********************* Invoice LAYOUT *************************
 // **************************************************************

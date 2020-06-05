@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('html_errors', 1);
 
 require_once  __DIR__ . '/functions.php';
 // auth();
@@ -119,4 +116,4 @@ $mpdf->WriteHTML($html, \Mpdf\HTMLParserMode::HTML_BODY);
 
 // Set nama of file and set to  download 'D';
 $name = "MR Chef Invoice number " . $pdf_inv_number. ".pdf";
-$mpdf->Output($name, 'I');
+$mpdf->Output($name, 'D');

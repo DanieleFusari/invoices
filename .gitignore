@@ -6,3 +6,5 @@
 *.db
 .env
 vendor
+test.php
+error_finder.php
