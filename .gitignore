@@ -7,4 +7,5 @@
 .env
 vendor
 test.php
+test.css
 error_finder.php

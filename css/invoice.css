@@ -233,7 +233,7 @@ main {
 
 
 /* ********************************************** */
-/* *************** New Invoice *************** */
+/* *********** New Invoice, link new account **** */
 /* ********************************************** */
 
 /************** get ***************/
@@ -247,6 +247,16 @@ main {
   margin-left: 20px;
 }
 
+.create_new_account_link:link{
+  color: var(--color-primary);
+  float: right;
+  text-decoration: underline;
+}
+
+.create_new_account_link:hover{
+  color: blue;
+}
+
 /************** form ALL **************/
 
 input,
@@ -258,10 +268,13 @@ input,
 
 /************** form account details **************/
 
-#account_invoice_details fieldset {
-  margin: 20px auto;
+#create_edit_account {
+  margin: 520px auto 0;
   padding: 0;
-  height: auto;
+}
+
+#create_edit_account .headh1 {
+  color: var(--color-primary);
 }
 
 #account_invoice_details table{

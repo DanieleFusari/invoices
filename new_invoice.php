@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
     <main>
-      <section id="create_edit_invoice" >
+      <section id="create_edit_invoice">
         <form class="get_invoice" action="new_invoice.php" method="post">
           <fieldset>
             <legend>Edit Invoice:</legend>
@@ -22,9 +22,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input id="get_inv" type="number" name="inv" value=<?php if(isset($edit_details)) echo $edit_details['invoice'];?>>
 
             <input type="submit" value="EDIT">
+            <a class="create_new_account_link" href="#create_edit_account">Create a new Account</a>
           </fieldset>
         </form>
-
     <hr>
 
         <form class="create_invoice" action="controller/create_edit.php" method="post">
@@ -144,6 +144,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
       </section>
 
       <section id="create_edit_account">
+        <h1 class="headh1">CREATE A NEW ACCOUNT</h1>
         <fieldset id="account_invoice_details">
           <legend>Create an Account</legend>
         <form class="" action="controller/create_edit_account.php" method="post">
