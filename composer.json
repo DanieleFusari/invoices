@@ -1,7 +1,7 @@
 {
     "require": {
         "mpdf/mpdf": "^8.0",
-        "firebase/php-jwt": "^6.0",
+        "firebase/php-jwt": "^5.2",
         "vlucas/phpdotenv": "^4.1"
     }
 }
